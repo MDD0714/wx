@@ -1,0 +1,16 @@
+<!--pages/music-ranking/rank.wxml-->
+<view class="wrap">
+  <view class="header">
+    <view class="list">
+      <navigator url="../index/index" open-type="switchTab">音乐推荐</navigator>
+      <navigator url="../singer-category/category">歌手分类</navigator>
+      <navigator url="./rank">音乐排行</navigator>
+    </view>
+  </view>
+  <view class="rankList">
+    <view class="item" wx:for="{{rankList}}" wx:key="rankid" bindtap="getSongList" data-rankid="{{item.rankid}}">
+      <image src="{{item.imgurl}}"></image>
+      <text>{{item.rankname}}</text>
+    </view>
+  </view>
+</view>

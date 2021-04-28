@@ -1,0 +1,24 @@
+/* pages/search/search.wxss */
+input {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding-left: 10px;
+}
+.musicList {
+  width: 100%;
+  padding: 5px 10px 0;
+  box-sizing: border-box;
+}
+.item {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  background-color: #F7F7F7;
+  padding-left: 10px;
+  box-sizing: border-box;
+}

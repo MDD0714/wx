@@ -1,0 +1,11 @@
+<!--pages/singer-song/song.wxml-->
+<view class="wrap">
+  <view class="title">{{singername}}</view>
+  <view class="songlist">
+    <view class="item" wx:for="{{songlist}}" wx:key="audio_id" bindtap="playMusic" data-hash="{{item.hash}}">
+      <text>歌曲名：{{item.songname}}</text>
+      <view>作者：{{item.singername}}</view>
+      <view>{{item.filename}}</view>
+    </view>
+  </view>
+</view>

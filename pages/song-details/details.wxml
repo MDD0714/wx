@@ -1,0 +1,6 @@
+<!--pages/song-details/details.wxml-->
+<view class="wrap">
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop bindtap="aaa"></audio>
+  <button type="primary" bindtap="audioPlay">播放</button>
+  <button type="primary" bindtap="audioPause">暂停</button>
+</view>

@@ -1,0 +1,26 @@
+/* pages/singer-song/song.wxss */
+.title{
+  font-size: 26px;
+  padding: 5px;
+}
+.songlist {
+  width: 100%;
+  padding: 5px 10px 0;
+  box-sizing: border-box;
+}
+.item {
+  height: 80px;
+  margin: 8px 0;
+  background-color: #F7F7F7;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.item>text{
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+.item>view{
+  font-size: 14px;
+  margin: 5px;
+}

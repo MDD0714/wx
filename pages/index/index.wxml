@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="wrap">
+  <view class="header">
+    <view class="list">
+      <navigator url="./index" open-type="switchTab">音乐推荐</navigator>
+      <navigator url="../singer-category/category">歌手分类</navigator>
+      <navigator url="../music-ranking/rank">音乐排行</navigator>
+    </view>
+    <view class="container">
+      <view class="page-body">
+        <view class="page-section page-section-spacing swiper">
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+            duration="{{duration}}">
+            <block wx:for="{{bannerUrl}}" wx:key="index">
+              <swiper-item>
+                <image src="{{item.imgurl}}" title="{{item.title}}"></image>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="musicList">
+    <text>推荐歌单</text>
+    <navigator wx:for="{{musicList}}" wx:key="audio_id" url="../song-details/details?hash={{item.hash}}">{{item.filename}}</navigator>
+  </view>
+</view>

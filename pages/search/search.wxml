@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input type="text" class="weui-input" auto-focus placeholder="搜索歌曲" confirm-type="search" bindconfirm='searchSong' bindinput="set"/>
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  <view class="musicList">
+    <navigator class="item" wx:for="{{searchList}}" wx:key="index" url="../song-details/details?hash={{item.hash}}">{{item.filename}}</navigator>
+  </view>
+</view>

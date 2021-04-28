@@ -1,0 +1,16 @@
+<!--pages/singer-category/category.wxml-->
+<view class="wrap">
+  <view class="header">
+    <view class="list">
+      <navigator url="../index/index" open-type="switchTab">音乐推荐</navigator>
+      <navigator url="./category" open-type="navigateBack">歌手分类</navigator>
+      <navigator url="../music-ranking/rank">音乐排行</navigator>
+    </view>
+  </view>
+  <view class="cateList">
+    <view class="item" wx:for="{{catelist}}" wx:key="classid" wx:for-item="itemName" bindtap="getSinger" data-classid="{{itemName.classid}}">
+      <image src="{{itemName.imgurl}}"></image>
+      <text>{{itemName.classname}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+/* pages/singer-category/category.wxss */
+.header {
+  height: 40px;
+}
+.cateList {
+  width: 100%;
+  padding: 5px 10px 0;
+  box-sizing: border-box;
+}
+.item {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  background-color: #F7F7F7;
+}
+.item>image{
+  display: block;
+  width: 20%;
+  height: 100%;
+}
+.item>text{
+  width: 80%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+}

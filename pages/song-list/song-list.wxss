@@ -1,0 +1,16 @@
+/* pages/song-list/song-list.wxss */
+.title{
+  font-size: 26px;
+  padding: 5px;
+}
+.item {
+  height: 55px;
+  margin: 8px 0;
+  background-color: #F7F7F7;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.item>view{
+  font-size: 14px;
+  margin: 5px;
+}
